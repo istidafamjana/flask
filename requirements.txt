@@ -1,6 +1,8 @@
 Flask==2.0.1
+Werkzeug==2.0.1
 requests==2.26.0
-pyjwt==2.1.0
+PyJWT==2.1.0
 protobuf==3.17.3
 pycryptodome==3.10.1
 urllib3==1.26.6
+protobuf-decoder==0.1.0  # أضف هذا السطر
