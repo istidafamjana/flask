@@ -12,7 +12,9 @@ import urllib3
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 app = Flask(__name__)
-
+@app.route('/')
+def home():
+    return 'Hello, World!'
 def encrypt_api(plain_text):
     plain_text = bytes.fromhex(plain_text)
     key = bytes([89, 103, 38, 116, 99, 37, 68, 69, 117, 104, 54, 37, 90, 99, 94, 56])
