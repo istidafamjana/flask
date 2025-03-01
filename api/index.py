@@ -12,9 +12,12 @@ import urllib3
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 app = Flask(__name__)
+
+# إضافة مسار للرسالة الترحيبية
 @app.route('/')
 def home():
-    return 'Hello, World!'
+    return "تم رفع الملف بنجاح على Vercel! يمكنك الآن استخدام API."
+
 def encrypt_api(plain_text):
     plain_text = bytes.fromhex(plain_text)
     key = bytes([89, 103, 38, 116, 99, 37, 68, 69, 117, 104, 54, 37, 90, 99, 94, 56])
